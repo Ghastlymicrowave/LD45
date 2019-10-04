@@ -55,10 +55,34 @@
             }
         },
         {
+            "Key": "365bef5d-bc92-4ef2-9bca-7efb1ee129af",
+            "Value": {
+                "id": "373762c6-5d1f-4906-86e0-b2646020819d",
+                "resourcePath": "objects\\obj_gatherRecource\\obj_gatherRecource.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48444f58-bcd2-4439-9269-8b4410cc6c52",
             "Value": {
                 "id": "2c51f5a0-ec7c-4a58-848f-0020a20df6d3",
                 "resourcePath": "views\\48444f58-bcd2-4439-9269-8b4410cc6c52.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "55fb316d-cd54-4406-836e-4b2e55cb1606",
+            "Value": {
+                "id": "d0b885cc-50ce-489d-9e10-2273bb616a00",
+                "resourcePath": "objects\\obj_tablet\\obj_tablet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56161ca1-b6c7-437c-883c-530062fdbbec",
+            "Value": {
+                "id": "4a71b35c-5cf5-4b5c-b828-519dc045b540",
+                "resourcePath": "views\\56161ca1-b6c7-437c-883c-530062fdbbec.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -68,6 +92,14 @@
                 "id": "ed35125a-6fad-4865-b381-0bbc116b17dc",
                 "resourcePath": "views\\5b6af95f-24dc-432b-8bcb-9bb4bd234175.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6e4c4354-da2b-40de-b0ac-ef83807145c2",
+            "Value": {
+                "id": "26b971b5-9bab-4a89-95c4-74afe77dc69b",
+                "resourcePath": "objects\\obj_mainControl\\obj_mainControl.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -132,6 +164,14 @@
                 "id": "219ae99f-6d86-47a4-beb5-24bb9328b8b2",
                 "resourcePath": "views\\bf35c48b-a8d2-481a-8366-85a07aa4f89b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c36c02a3-7201-4022-a1ab-e521e01df2bf",
+            "Value": {
+                "id": "ed954da6-361a-4473-bdd8-8d39fb73e552",
+                "resourcePath": "objects\\obj_DirtPile\\obj_DirtPile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
