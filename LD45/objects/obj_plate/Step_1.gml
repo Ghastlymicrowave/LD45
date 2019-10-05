@@ -31,7 +31,7 @@ if held=1{
 	for (var i = 0; i<ds_list_size(burgerParts)-1;i++){
 			var typeval=burgPartsUsed[ds_list_find_value(burgerParts,i).type]
 			if (burgPartsUsed[typeval]>0){//used before
-				projID.damage+=((typeval)/(typeval*typeval))*type*5+5
+				projID.damage+=((typeval)/(typeval*typeval))*typeval*5+5
 				burgPartsUsed[typeval]++
 			}else{//first use
 				projID.damage+=ds_list_find_value(burgerParts,i).type*5+5

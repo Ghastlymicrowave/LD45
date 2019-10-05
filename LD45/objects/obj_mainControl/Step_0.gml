@@ -32,19 +32,24 @@ if inst>1{
 		
 		inst.held=1	
 		hasThing=1
-	
+		recource=inst
 	}else if inst.held=1{//dropping recource
 	hasThing=0
 	with (inst){
 				
 	var plateID = instance_place(x,y,obj_plate)
+	var ovenID = instance_place(x,y,obj_oven)
 	if plateID!=noone&&plateID.finished=0{
 	
 	ds_list_add(plateID.burgerParts,id)
 	x=-50
 	y=-50
 	sprite_index=noone
-	} else if !place_meeting(x,y,obj_worktable){
+	}else if ovenID>0{ //placing in oven
+	ovenID.timeleft=irandom_range(3,10)*60
+	ovenID.inputType=type
+	instance_destroy(inst)
+	}else if !place_meeting(x,y,obj_worktable){//placing on table
 		instance_destroy()	
 	}
 	held=0
@@ -70,7 +75,10 @@ if inst>1&&hasThing=0{
 hasThing=1
 var recourceID =instance_create_depth(obj_mainControl.x,obj_mainControl.y,0,obj_Recource)
 SetDisplacement(inst)
-	inst.held=1
+recourceID.type=inst.type
+recource=inst
+	recourceID.held=1
+
 }
 }
 }
