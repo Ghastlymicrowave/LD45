@@ -15,6 +15,14 @@ if heldRecource>1{
 heldRecource.displaceX=mouse_x-heldRecource.x
 heldRecource.displaceY=mouse_y-heldRecource.y
 heldRecource.held=1	
+}else{
+heldBurger=instance_place(mouse_x,mouse_y,obj_plate)	
+
+if heldBurger>1&&heldBurger.finished=1{
+heldRecource.displaceX=mouse_x-heldRecource.x
+heldRecource.displaceY=mouse_y-heldRecource.y
+heldBurger.held=1
+}
 }
 }
 if mouse_check_button_pressed(mb_right){

@@ -5,7 +5,7 @@ if held=1{
 	if mouse_check_button_released(mb_left){
 	
 	var plateID = instance_place(x,y,obj_plate)
-	if plateID!=noone{
+	if plateID!=noone&&plateID.finished=0{
 	
 	ds_list_add(plateID.burgerParts,id)
 	x=-50
