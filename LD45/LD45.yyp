@@ -263,6 +263,14 @@
             }
         },
         {
+            "Key": "a00b755a-e3f9-4188-b4dc-fd8f4960dcef",
+            "Value": {
+                "id": "d3b306d0-fbf8-475c-adb3-601f7ef1ae20",
+                "resourcePath": "scripts\\Killme\\Killme.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "6a0aa5d1-135f-4669-a213-50eab611b8c9",
@@ -458,7 +466,8 @@
     "script_order": [
         "edabcaf7-0215-4b9e-8106-60f8f6aebe56",
         "7dd75d6b-2bb4-4341-87db-4ed3fdff054e",
-        "edbfefb1-66f5-4754-a3c0-0de5feae6a0d"
+        "edbfefb1-66f5-4754-a3c0-0de5feae6a0d",
+        "a00b755a-e3f9-4188-b4dc-fd8f4960dcef"
     ],
     "tutorial": ""
 }

@@ -42,6 +42,9 @@ var enemyID= instance_place(x,y,prnt_enemy)
 if enemyID>1 {
 	
 enemyID.hp-=damage
-
+if enemyID.hp<0{
+enemyID.hp=0	
+}
+instance_destroy()
 }
 }

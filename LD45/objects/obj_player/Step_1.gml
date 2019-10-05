@@ -18,6 +18,9 @@ if spd>maxspd then spd=maxspd
 direction=dir
 speed=spd
 
+while (place_meeting(x+hspeed,y+vspeed,obj_collision))&&!place_meeting(x,y,obj_collision)&&speed>0{
+	speed--
+}
 
 if place_meeting(x+hspeed,y,obj_collision){
 while !place_meeting(x,y,obj_collision)&&place_meeting(x+hspeed,y,obj_collision){

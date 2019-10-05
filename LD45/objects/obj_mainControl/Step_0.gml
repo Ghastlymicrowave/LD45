@@ -124,16 +124,18 @@ if hasThing=1&&ds_list_size(heldBurger)>0{
 	}
 	projID.image_xscale= min(ds_list_size(heldBurger)/10+.90,4)
 	projID.image_yscale=projID.image_xscale
-	for (var i = 0; i<ds_list_size(heldBurger)-1;i++){
+	for (var i = 0; i<ds_list_size(heldBurger);i++){
 			var typeval=burgPartsUsed[ds_list_find_value(heldBurger,i).type]
 			if (burgPartsUsed[typeval]>0){//used before
-				projID.damage+=((typeval)/(typeval*typeval))*typeval*5+5
+				if typeval>0{
+				projID.damage+=((typeval)/(typeval*typeval))*typeval*5+5}
+				else{projID.damage+=5}
 				burgPartsUsed[typeval]++
 			}else{//first use
 				projID.damage+=ds_list_find_value(heldBurger,i).type*5+5
 				burgPartsUsed[typeval]++
 			}
-			
+			show_debug_message(projID.damage)
 			switch(typeval){
 			case 0:Fdamge++
 			break;

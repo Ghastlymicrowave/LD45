@@ -1,3 +1,13 @@
+///@func draw_valueBar( x, y, height, width, val, max, color)
+///@desc draws a hp bar
+///@arg x
+///@arg y
+///@arg height
+///@arg width
+///@arg current val
+///@arg max value
+///@arg bar color
+
 //argument0 = x
 //argument1 = y
 //argument2 = height
