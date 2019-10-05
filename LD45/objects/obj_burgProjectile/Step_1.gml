@@ -34,7 +34,9 @@ while (place_meeting(x+hspeed,y+vspeed,obj_collision))&&!place_meeting(x,y,obj_c
 	speed--
 	
 }
-if speed<0{speed=0}else{
+if speed<0{speed=0}
+	
+	if speed>1{
 var enemyID= instance_place(x,y,prnt_enemy)
 
 if enemyID>1 {

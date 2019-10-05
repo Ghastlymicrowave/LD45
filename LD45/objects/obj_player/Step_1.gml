@@ -1,3 +1,7 @@
+if keyboard_check(vk_shift){
+maxspd=10	
+}else maxspd=6
+
 var hinput = keyboard_check(ord("D")) - keyboard_check(ord("A"))
 var vinput = keyboard_check(ord("S")) - keyboard_check(ord("W"))
 
@@ -9,7 +13,7 @@ dir -= angle_difference(dir,newdir)/5}
 spd += (maxspd-spd)/4} else{ spd-=spd/4}
 lastinputs= (abs(hinput)||abs(vinput))
 
-
+if spd>maxspd then spd=maxspd
 
 direction=dir
 speed=spd
