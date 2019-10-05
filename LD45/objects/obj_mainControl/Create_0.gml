@@ -15,3 +15,5 @@ window_set_cursor(cr_none)
 hasThing=0
 
 recource=0
+
+heldBurger= ds_list_create()

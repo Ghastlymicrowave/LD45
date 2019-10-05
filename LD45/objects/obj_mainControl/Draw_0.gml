@@ -24,3 +24,9 @@ if inst>1{
 }
 
 }
+
+if (hasThing=1&&ds_list_size(heldBurger)>0){
+var drawx=obj_player.x+cos((displaceAngle+image_angle)*pi/180)*displaceDist
+var drawy=obj_player.y-sin((displaceAngle+image_angle)*pi/180)*displaceDist
+draw_sprite_ext(spr_burg,0,drawx,drawy,1,1,image_angle-90,c_white,1)
+}
