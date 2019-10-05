@@ -1,3 +1,4 @@
+draw_self()
 if ds_list_size(burgerParts)>0{
 //draw sprite for the bun
 if ds_list_size(burgerParts)>1{
