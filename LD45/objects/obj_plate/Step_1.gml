@@ -23,9 +23,9 @@ if held=1{
 	
 	for (i=10; i!=-1;i--){
 	burgPartsUsed[i]=0
-	var Fdamge=0
-	var Podamage=0
-	var Phdamage=0
+	Fdamge=0
+	Podamage=0
+	Phdamage=0
 	}
 	
 	for (var i = 0; i<ds_list_size(burgerParts)-1;i++){
@@ -37,6 +37,16 @@ if held=1{
 				projID.damage+=ds_list_find_value(burgerParts,i).type*5+5
 				burgPartsUsed[typeval]++
 			}
+			
+			switch(typeval){
+			case 0:Fdamge++
+			break;
+			case 1:Podamage++
+			break;
+				
+			}
+			
+			
 			
 			}
 	ds_list_clear(burgerParts)
