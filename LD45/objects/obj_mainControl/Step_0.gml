@@ -1,4 +1,6 @@
 
+
+
 var cursorDir= point_direction(0,0,window_mouse_get_x()-xhalf/2,window_mouse_get_y()-yhalf/2)
 x = obj_player.x +cos(cursorDir*pi/180)*50 + obj_player.hspeed
 y = obj_player.y -sin(cursorDir*pi/180)*50 + obj_player.vspeed
