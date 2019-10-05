@@ -14,6 +14,9 @@ switch(inputType){
 	case 3: recID.type=4
 	break;
 	case 4: recID.type=5
+	break;
+	case 5: recID.type=5
+	break;
 }
 }
 	
