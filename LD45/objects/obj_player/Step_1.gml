@@ -31,6 +31,7 @@ direction++
 }
 while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&speed>0){
 speed--
+speed=clamp(speed,0,999)
 }
 }
 
