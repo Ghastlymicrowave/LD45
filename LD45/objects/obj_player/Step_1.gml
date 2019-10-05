@@ -20,22 +20,20 @@ speed=spd
 
 
 
-if place_meeting(x+hspeed,y,obj_collision){
-while !place_meeting(x,y,obj_collision)&&place_meeting(x+hspeed,y,obj_collision){
-	hspeed-=sign(hspeed)
+if place_meeting(x+hspeed,y+vspeed,obj_collision){
+dirOrigin=direction
+while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&abs(dirOrigin-direction)<=dirCutoff){
+direction--
+}
+if place_meeting(x+hspeed,y+vspeed,obj_collision){direction=dirOrigin}
+while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&abs(dirOrigin-direction)<=dirCutoff){
+direction++
+}
+while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&speed>0){
+speed--
+}
 }
 
-}
-
-if place_meeting(x,y+vspeed,obj_collision){
-while !place_meeting(x,y,obj_collision)&&place_meeting(x,y+vspeed,obj_collision){
-	vspeed-=sign(vspeed)
-}
-}
-
-while (place_meeting(x+hspeed,y+vspeed,obj_collision))&&!place_meeting(x,y,obj_collision)&&speed>0{
-	speed--
-}
 
 
 
