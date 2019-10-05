@@ -6,6 +6,9 @@ draw_sprite_ext(spr_point,0,x,y,1,1,point_direction(0,0,window_mouse_get_x()-xha
 if hasThing=0{
 	
 inst = instance_place(x,y,obj_Recource)
+if inst<1{
+	inst = instance_place(x,y,prnt_RecourcePile)
+}
 if inst>1{
 	var drawString=""
 	switch(inst.type){
@@ -20,7 +23,7 @@ if inst>1{
 	//draw_text_ext(inst.x,inst.y-20,drawString,1,400)
 	draw_set_halign(fa_center)
 	draw_set_valign(fa_middle)
-	draw_text_ext(inst.x,inst.y-inst.sprite_height/2,drawString,1,400)
+	draw_text_ext(inst.x,inst.y-inst.sprite_height/2-20,drawString,1,400)
 }
 
 }
