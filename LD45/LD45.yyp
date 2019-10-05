@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "150a2fa3-cafe-448e-9666-c2fb40843be0",
+            "Value": {
+                "id": "22c148ba-d70d-4951-b642-f419a25ae657",
+                "resourcePath": "objects\\obj_protoEnemyReal\\obj_protoEnemyReal.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1f5134cc-33f6-4941-b2ea-3144589cab17",
             "Value": {
                 "id": "1d733649-b01d-4f46-abd0-434240f932a1",
@@ -66,7 +74,7 @@
             "Key": "2035f302-77fa-4462-80db-afe7ad4aef60",
             "Value": {
                 "id": "5d85a281-afaf-4e53-8098-d1aa8a073981",
-                "resourcePath": "sprites\\sprite6\\sprite6.yy",
+                "resourcePath": "sprites\\spr_burg\\spr_burg.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -76,6 +84,14 @@
                 "id": "972e1847-fce1-4d38-af93-0a1915eaec7b",
                 "resourcePath": "views\\273447db-a217-4f6e-a7a8-80f3fd1073de.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "28cf497d-cf94-4ee9-9748-3ac563625f27",
+            "Value": {
+                "id": "c10bb21c-aea1-4213-bb9c-fcf50db4d4d7",
+                "resourcePath": "objects\\obj_burgProjectile\\obj_burgProjectile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -175,6 +191,30 @@
             }
         },
         {
+            "Key": "74908894-b250-451b-a0c1-9d422f50b6c8",
+            "Value": {
+                "id": "cf04b2b2-a4d2-481c-8788-c52284fbb621",
+                "resourcePath": "sprites\\spr_point\\spr_point.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "74eb151e-7b69-4d85-bcae-44b37de5f0ab",
+            "Value": {
+                "id": "76bc73fa-f7df-4a1d-b280-a2128b85b66d",
+                "resourcePath": "objects\\obj_collision\\obj_collision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "7dd75d6b-2bb4-4341-87db-4ed3fdff054e",
+            "Value": {
+                "id": "8e27cfca-f6d4-4de1-b174-9f0fb775b8ea",
+                "resourcePath": "scripts\\SetDisplacement\\SetDisplacement.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "7f6ea457-6450-4c6c-8279-9651e9e8dae9",
             "Value": {
                 "id": "54bc71c8-ba62-43a6-9d67-860bf0c528bc",
@@ -263,10 +303,26 @@
             }
         },
         {
+            "Key": "c07a98a2-7570-4977-a2c9-4b777ab76cbd",
+            "Value": {
+                "id": "0de8ee19-7a40-4716-b57a-dfd7b86ef686",
+                "resourcePath": "objects\\obj_player\\obj_player.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c36c02a3-7201-4022-a1ab-e521e01df2bf",
             "Value": {
                 "id": "ed954da6-361a-4473-bdd8-8d39fb73e552",
-                "resourcePath": "objects\\obj_DirtPile\\obj_DirtPile.yy",
+                "resourcePath": "objects\\prnt_RecourcePile\\prnt_RecourcePile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ca62c223-cd4c-4c57-9eb9-18ea4476d69b",
+            "Value": {
+                "id": "e7a6c691-26b4-4528-82ae-87ee1f8043c4",
+                "resourcePath": "objects\\obj_protoEnemyPath\\obj_protoEnemyPath.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -360,7 +416,8 @@
         }
     ],
     "script_order": [
-        "edabcaf7-0215-4b9e-8106-60f8f6aebe56"
+        "edabcaf7-0215-4b9e-8106-60f8f6aebe56",
+        "7dd75d6b-2bb4-4341-87db-4ed3fdff054e"
     ],
     "tutorial": ""
 }
