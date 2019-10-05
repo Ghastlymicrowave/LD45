@@ -1,3 +1,4 @@
+
 dist+=(maxdist-dist)/10
 
 x=cos(dir*pi/180)*dist+startx
