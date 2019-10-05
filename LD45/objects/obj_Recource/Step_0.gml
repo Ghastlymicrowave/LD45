@@ -4,11 +4,16 @@ if held=1{
 	y=mouse_y-displaceY
 	if mouse_check_button_released(mb_left){
 	
-if !place_meeting(x,y,obj_worktable){
+	var plateID = instance_place(x,y,obj_plate)
+	if plateID!=noone{
+	
+	ds_list_add(plateID.burgerParts,id)
+	x=-50
+	y=-50
+	sprite_index=noone
+	} else if !place_meeting(x,y,obj_worktable){
 instance_destroy()	
 }
-
-
 held=0
 }
 }
