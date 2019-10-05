@@ -19,8 +19,8 @@ heldRecource.held=1
 heldBurger=instance_place(mouse_x,mouse_y,obj_plate)	
 
 if heldBurger>1&&heldBurger.finished=1{
-heldRecource.displaceX=mouse_x-heldRecource.x
-heldRecource.displaceY=mouse_y-heldRecource.y
+heldBurger.displaceX=mouse_x-heldBurger.x
+heldBurger.displaceY=mouse_y-heldBurger.y
 heldBurger.held=1
 }
 }
