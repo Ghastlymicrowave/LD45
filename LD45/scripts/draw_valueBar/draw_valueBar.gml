@@ -25,6 +25,7 @@ smoothVal+= (argument4-smoothVal)/argument7
 
 var spriteW= argument3/sprite_width
 var spriteH= argument2/sprite_width
+var invert= make_color_hsv((color_get_hue(argument6)+127.5)mod(255),color_get_saturation(argument6),color_get_value(argument6))
 draw_set_alpha(1)
 draw_set_color(c_white)
 draw_text(argument0,argument1,smoothVal)
@@ -38,7 +39,7 @@ draw_set_color(argument6)
 draw_set_halign(fa_center)
 draw_set_valign(fa_center)
 draw_text(argument0,argument1+1,argument4)
-draw_set_color(c_black)
+draw_set_color(invert)
 draw_text(argument0,argument1,argument4)
 draw_set_color(c_white)
 draw_set_alpha(1)
