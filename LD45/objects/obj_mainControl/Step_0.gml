@@ -49,6 +49,7 @@ if inst>1{
 	sprite_index=noone
 	}else if ovenID>0{ //placing in oven
 	ovenID.timeleft=irandom_range(3,10)*60
+	ovenID.maxtimeleft=ovenID.timeleft
 	ovenID.inputType=type
 	instance_destroy(inst)
 	}else if !place_meeting(x,y,obj_worktable){//placing on table
