@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "98d22cd2-dfb6-4cc6-a437-c24d3f6797a7",
+            "Value": {
+                "id": "244a5f36-4c40-41ab-9806-92d7263de406",
+                "resourcePath": "objects\\obj_oven\\obj_oven.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9e69aedf-e3ad-4b72-a40f-9102e6b76432",
             "Value": {
                 "id": "77c590ca-7112-40f8-8c7c-c2bf40953130",

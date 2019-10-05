@@ -20,6 +20,8 @@ if gatherTimer[i]!=0{
 
 
 
+
+
 if mouse_check_button_pressed(mb_left){
 	#region Recource
 var inst =instance_place(obj_mainControl.x,obj_mainControl.y,obj_Recource)

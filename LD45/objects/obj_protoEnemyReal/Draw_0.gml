@@ -1,2 +1,2 @@
 draw_self()
-draw_sprite_stretched()
+//draw_sprite_stretched()
