@@ -43,8 +43,9 @@ if(menuOpen=1){
 		#region Mouse Hover
 		var boxx1 = window_get_width()/2-400
 		var boxx2 = window_get_width()/2+400
-		var boxy1 = 128+i*128-smoothScroll+64
-		var boxy2 = 128+i*128-smoothScroll-64
+		var boxy2 = 128+i*128-smoothScroll+64
+		var boxy1 = 128+i*128-smoothScroll-64
+		//show_debug_message(string(boxx1)+"/"+string(boxy1)+"::"+string(boxx2)+"/"+string(boxy2)+":"+string(window_mouse_get_x())+string(window_mouse_get_y()))
 		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)){hover=true
 			draw_rectangle(boxx1,boxy1,boxx2,boxy2,0)}
 		#endregion
