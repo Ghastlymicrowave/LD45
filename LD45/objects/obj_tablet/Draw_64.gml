@@ -20,7 +20,6 @@ if(menuOpen=1){
 	
 	#region Menu Draw
 	i=0
-	
 	#region Scroll
 	if(64+array_height_2d(upgrades)*128>window_get_height()){
 	maxScroll=128+array_height_2d(upgrades)*128-window_get_height()
@@ -36,9 +35,21 @@ if(menuOpen=1){
 	draw_set_color(c_white)
 	draw_rectangle(window_get_width()/2+402,66+scroll/maxScroll*(window_get_height()-132),window_get_width()/2+418.69,window_get_height()-66,false)
 	#endregion
-	
 	repeat(array_height_2d(upgrades)){
-		draw_sprite(sp_shoptemplate,0,window_get_width()/2,128+i*128-smoothScroll)
+		draw_sprite(upgrades[i,2],0,window_get_width()/2-272,128+i*128-smoothScroll)
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll-32,upgrades[i,0])
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll,upgrades[i,1])
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll+32,"$"+string(upgrades[i,3]))
+		#region Mouse Hover
+		var boxx1 = window_get_width()/2-400
+		var boxx2 = window_get_width()/2+400
+		var boxy1 = 128+i*128-smoothScroll+64
+		var boxy2 = 128+i*128-smoothScroll-64
+		if(point_in_rectangle(mouse_x,mouse_y,boxx1,boxy1,boxx2,boxy2)){hover=true
+			draw_rectangle(boxx1,boxy1,boxx2,boxy2,0)}
+		#endregion
+		#region	Mouse Down
+		#endregion
 		i++
 		}
 	#endregion
