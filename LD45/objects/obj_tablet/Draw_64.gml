@@ -45,7 +45,7 @@ if(menuOpen=1){
 		var boxx2 = window_get_width()/2+400
 		var boxy1 = 128+i*128-smoothScroll+64
 		var boxy2 = 128+i*128-smoothScroll-64
-		if(point_in_rectangle(mouse_x,mouse_y,boxx1,boxy1,boxx2,boxy2)){hover=true
+		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)){hover=true
 			draw_rectangle(boxx1,boxy1,boxx2,boxy2,0)}
 		#endregion
 		#region	Mouse Down

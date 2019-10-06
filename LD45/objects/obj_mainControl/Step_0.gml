@@ -47,7 +47,7 @@ if inst>1{
 	x=-50
 	y=-50
 	sprite_index=noone
-	}else if ovenID>0{ //placing in oven
+	}else if ovenID>0&&ovenID.timeleft=0{ //placing in oven
 	ovenID.timeleft=irandom_range(3,10)*60
 	ovenID.maxtimeleft=ovenID.timeleft
 	ovenID.inputType=type
