@@ -22,26 +22,19 @@ if gatherTimer[i]!=0{
 
 
 
-#region E
-if(keyboard_check_pressed(ord("E"))&&hasThing=0){
-var inst =instance_place(obj_mainControl.x,obj_mainControl.y,prnt_machine)
-if inst>1{//if it's a recource
-	
-	if hasThing=0 {//picking up recource
-		SetDisplacement(inst)
-		inst.held=1	
-		hasThing=1
-		recource=inst
-	}else if inst.held=1{
-		inst.held=0
-	}
 
-}else{
-	inst =instance_nearest(x,y,prnt_machine)
-	inst.held=0}
-}
-#endregion
+
+
+
+
+
+
+
+
+
+
 #region LMB
+
 if mouse_check_button_pressed(mb_left){
 	#region Recource
 var inst =instance_place(obj_mainControl.x,obj_mainControl.y,obj_Recource)
@@ -127,17 +120,51 @@ recource=inst
 }
 }
 
-inst = instance_place(x,y,prnt_machine)
+inst = instance_place(x,y,prnt_machine)//if machine
 if inst>1{
 	
+
+
+
 	
+if (hasThing=0){
+
+
+	
+	if hasThing=0 {//picking up recource
+		SetDisplacement(inst)
+		inst.held=1	
+		hasThing=1
+		recource=inst
+	}else if inst.held=1{
+		inst.held=0
+	}
+
+}
+
+
+	
+
+
+
+
 }
 
 
 
+}
 
-}
-}
+
+//end of lmb
+
+
+
+
+
+
+
+
+
 #endregion
 #endregion
 #region RMB
