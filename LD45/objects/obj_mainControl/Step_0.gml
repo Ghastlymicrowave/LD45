@@ -22,8 +22,26 @@ if gatherTimer[i]!=0{
 
 
 
+#region E
+if(keyboard_check_pressed(ord("E"))&&hasThing=0){
+var inst =instance_place(obj_mainControl.x,obj_mainControl.y,prnt_machine)
+if inst>1{//if it's a recource
+	
+	if hasThing=0 {//picking up recource
+		SetDisplacement(inst)
+		inst.held=1	
+		hasThing=1
+		recource=inst
+	}else if inst.held=1{
+		inst.held=0
+	}
 
-
+}else{
+	inst =instance_nearest(x,y,prnt_machine)
+	inst.held=0}
+}
+#endregion
+#region LMB
 if mouse_check_button_pressed(mb_left){
 	#region Recource
 var inst =instance_place(obj_mainControl.x,obj_mainControl.y,obj_Recource)
@@ -121,7 +139,8 @@ if inst>1{
 }
 }
 #endregion
-
+#endregion
+#region RMB
 if mouse_check_button_pressed(mb_right){
 
 if hasThing=0{
@@ -226,5 +245,5 @@ contextID.dir = (360)*pos/items
 }*/
 }
 #endregion
-
+#endregion
 show_debug_message(string(hasThing)+string(ds_list_size(heldBurger)))
