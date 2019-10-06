@@ -25,11 +25,12 @@ speed=spd
 
 
 
-while(place_meeting(x+hspeed,y,obj_collision)&&abs(hspeed>0)){
+while(place_meeting(x+hspeed,y,obj_collision)&&abs(hspeed)>0){
 hspeed-=sign(hspeed)
 }
 
-while(place_meeting(x,y+vspeed,obj_collision)&&abs(vspeed>0)){
+
+while(place_meeting(x,y+vspeed,obj_collision)&&abs(vspeed)>0){
 vspeed-=sign(vspeed)
 }
 
@@ -45,7 +46,7 @@ while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&abs(dirOrigin-direction)<=
 direction++
 }
 
-while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&speed>0){
+while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&abs(speed>0)){
 speed--
 speed=clamp(speed,0,999)
 }
