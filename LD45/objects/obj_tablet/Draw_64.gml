@@ -36,10 +36,7 @@ if(menuOpen=1){
 	draw_rectangle(window_get_width()/2+402,66+scroll/maxScroll*(window_get_height()-132),window_get_width()/2+418.69,window_get_height()-66,false)
 	#endregion
 	repeat(array_height_2d(upgrades)){
-		draw_sprite(upgrades[i,2],0,window_get_width()/2-272,128+i*128-smoothScroll)
-		draw_text(window_get_width()/2+64,128+i*128-smoothScroll-32,upgrades[i,0])
-		draw_text(window_get_width()/2+64,128+i*128-smoothScroll,upgrades[i,1])
-		draw_text(window_get_width()/2+64,128+i*128-smoothScroll+32,"$"+string(upgrades[i,3]))
+	draw_set_alpha(0.3)
 		#region Mouse Hover
 		var boxx1 = window_get_width()/2-400
 		var boxx2 = window_get_width()/2+400
@@ -47,8 +44,16 @@ if(menuOpen=1){
 		var boxy1 = 128+i*128-smoothScroll-64
 		//show_debug_message(string(boxx1)+"/"+string(boxy1)+"::"+string(boxx2)+"/"+string(boxy2)+":"+string(window_mouse_get_x())+string(window_mouse_get_y()))
 		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)){hover=true
-			draw_rectangle(boxx1,boxy1,boxx2,boxy2,0)}
+			draw_rectangle(boxx1,boxy1,boxx2,boxy2,0)
+			cursor_sprite=spr_cursor_hover
+			}
 		#endregion
+	draw_set_alpha(1)
+		draw_sprite(upgrades[i,2],0,window_get_width()/2-272,128+i*128-smoothScroll)
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll-32,upgrades[i,0])
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll,upgrades[i,1])
+		draw_text(window_get_width()/2+64,128+i*128-smoothScroll+32,"$"+string(upgrades[i,3]))
+		
 		#region	Mouse Down
 		#endregion
 		i++
