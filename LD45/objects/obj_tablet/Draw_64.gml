@@ -56,7 +56,9 @@ if(menuOpen=1){
 		
 		#region	Mouse Down
 		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)&&mouse_check_button_released(mb_left)){
+		instance_activate_all()
 		instance_create_depth(playerX+lengthdir_x(90,playerAng),playerY+lengthdir_y(90,playerAng),0,upgrades[i,4])
+		instance_deactivate_all(1)
 		}
 		#endregion
 		i++

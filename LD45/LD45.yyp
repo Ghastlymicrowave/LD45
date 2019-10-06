@@ -167,11 +167,27 @@
             }
         },
         {
+            "Key": "3852008f-6f45-4aac-82fa-399ea045c616",
+            "Value": {
+                "id": "e49bc241-1721-48be-9b26-fd1a839db749",
+                "resourcePath": "objects\\prnt_machine\\prnt_machine.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48444f58-bcd2-4439-9269-8b4410cc6c52",
             "Value": {
                 "id": "2c51f5a0-ec7c-4a58-848f-0020a20df6d3",
                 "resourcePath": "views\\48444f58-bcd2-4439-9269-8b4410cc6c52.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "53836fe8-7c03-43d5-b910-283c5a37888b",
+            "Value": {
+                "id": "9125866a-31ad-4a76-b374-15e1f6dac085",
+                "resourcePath": "objects\\obj_residentCollision\\obj_residentCollision.yy",
+                "resourceType": "GMObject"
             }
         },
         {

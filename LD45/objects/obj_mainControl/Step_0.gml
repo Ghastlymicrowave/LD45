@@ -106,9 +106,18 @@ SetDisplacement(inst)
 recourceID.type=inst.type
 recource=inst
 	recourceID.held=1
+}
+}
 
+inst = instance_place(x,y,prnt_machine)
+if inst>1{
+	
+	
 }
-}
+
+
+
+
 }
 }
 #endregion
