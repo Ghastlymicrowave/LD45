@@ -10,7 +10,11 @@ SSave = sprite_add("screensave.png",1,0,0,0,0)
 if(!menuOpen){
 	
 	menuOpen=!menuOpen
+	playerX=obj_player.x
+	playerY=obj_player.y
+	playerAng=obj_mainControl.image_angle
 instance_deactivate_all(1)
+	instance_create_depth(playerX,playerY,0,obj_collideBox)
 darkness=255
 lighten=0
 }else if lighten=0{

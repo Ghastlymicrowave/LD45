@@ -55,6 +55,9 @@ if(menuOpen=1){
 		draw_text(window_get_width()/2+64,128+i*128-smoothScroll+32,"$"+string(upgrades[i,3]))
 		
 		#region	Mouse Down
+		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)&&mouse_check_button_released(mb_left)){
+		instance_create_depth(playerX+lengthdir_x(90,playerAng),playerY+lengthdir_y(90,playerAng),0,upgrades[i,4])
+		}
 		#endregion
 		i++
 		}

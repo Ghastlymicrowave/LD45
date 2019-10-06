@@ -18,7 +18,7 @@ upgrades[0,0]="Borgar"
 upgrades[0,1]="Description Burger"
 upgrades[0,2]=MenuBG
 upgrades[0,3]=500
-upgrades[0,4]=0
+upgrades[0,4]=obj_oven
 //up 2
 upgrades[1,0]=0
 upgrades[1,1]=0
