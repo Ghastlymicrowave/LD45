@@ -37,7 +37,7 @@ vspeed-=sign(vspeed)
 
 
 
-dirOrigin=direction
+var dirOrigin=direction
 while(place_meeting(x+hspeed,y+vspeed,obj_collision)&&abs(dirOrigin-direction)<=dirCutoff){
 direction--
 }
@@ -51,7 +51,11 @@ speed--
 speed=clamp(speed,0,999)
 }
 
-
+if place_meeting(x,y,obj_currency){
+var currencyID=instance_place(x,y,obj_currency)
+obj_tablet.currency+=currencyID.currency
+instance_destroy(currencyID)
+}
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
 //x+=sin(dir*pi/180)*spd
