@@ -1,23 +1,14 @@
 {
-    "id": "56a8d341-d700-4df1-a967-356314af68db",
+    "id": "032595aa-c383-4c52-ae33-0ace03e6c1d9",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_conveyor",
+    "name": "obj_burgChute",
     "eventList": [
-        {
-            "id": "cd2c2e4d-4147-424a-923e-972356d4459a",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 0,
-            "m_owner": "56a8d341-d700-4df1-a967-356314af68db"
-        }
+        
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,
-    "parentObjectId": "3852008f-6f45-4aac-82fa-399ea045c616",
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
     "persistent": false,
     "physicsAngularDamping": 0.1,
     "physicsDensity": 0.5,
@@ -33,6 +24,6 @@
     "physicsStartAwake": true,
     "properties": null,
     "solid": false,
-    "spriteId": "ff33675a-75cd-4d5b-bd1c-61625e737510",
+    "spriteId": "00000000-0000-0000-0000-000000000000",
     "visible": true
 }

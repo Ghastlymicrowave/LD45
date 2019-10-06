@@ -1,3 +1,4 @@
+currency=0
 menuOpen=0
 darkenSpd=20
 darkness=255
