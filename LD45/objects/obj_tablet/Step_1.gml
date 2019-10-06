@@ -18,5 +18,11 @@ lighten=0
 	
 }
 
-
 }
+if(menuOpen=1){
+	if(hover){
+	cursor_sprite=spr_cursor_hover
+	}else{
+	cursor_sprite=spr_cursor_neutral}
+	}else{
+	cursor_sprite=noone}
