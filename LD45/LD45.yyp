@@ -71,6 +71,14 @@
             }
         },
         {
+            "Key": "21232dce-bb29-428f-b22f-3628cd79b564",
+            "Value": {
+                "id": "b8900f4a-01d2-4325-95fa-7464460f31e1",
+                "resourcePath": "objects\\prnt_enemyPath\\prnt_enemyPath.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "273447db-a217-4f6e-a7a8-80f3fd1073de",
             "Value": {
                 "id": "972e1847-fce1-4d38-af93-0a1915eaec7b",
@@ -188,6 +196,14 @@
                 "id": "4a71b35c-5cf5-4b5c-b828-519dc045b540",
                 "resourcePath": "views\\56161ca1-b6c7-437c-883c-530062fdbbec.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "56a8d341-d700-4df1-a967-356314af68db",
+            "Value": {
+                "id": "e6d84107-e152-4a25-a448-10f94c0aef6c",
+                "resourcePath": "objects\\obj_conveyor\\obj_conveyor.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -551,6 +567,14 @@
             }
         },
         {
+            "Key": "d1639b23-f29d-4ded-8ceb-bbac532c974b",
+            "Value": {
+                "id": "6b57aa3e-b3be-49a8-ad38-28ef7c64aee7",
+                "resourcePath": "objects\\obj_dampmosspile\\obj_dampmosspile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "d49d2e50-2cb9-4d14-95be-e83a378374c3",
             "Value": {
                 "id": "c14d168c-23bc-4d44-bb84-4675a14b6fbf",
@@ -588,6 +612,14 @@
                 "id": "e4fd00af-bb76-4856-9d6d-0882cc9f2ad1",
                 "resourcePath": "views\\dcf5ca75-1e8d-42ae-9ff6-365cfe3619b8.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e05f34c9-6b8a-45b3-82b0-bf93c4c9f56d",
+            "Value": {
+                "id": "2f83a1b6-a5b1-4ae5-8c78-846786582846",
+                "resourcePath": "objects\\obj_cheapbunspile\\obj_cheapbunspile.yy",
+                "resourceType": "GMObject"
             }
         },
         {

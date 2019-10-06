@@ -6,6 +6,6 @@ displaceX=0
 displaceY=0
 burgHeight=100
 held=0
-finished=0
+
 //first ingredient is bun
 //everything else is inside

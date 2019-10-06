@@ -28,34 +28,40 @@ if mouse_check_button_pressed(mb_left){
 	#region Recource
 var inst =instance_place(obj_mainControl.x,obj_mainControl.y,obj_Recource)
 
-if inst>1{
-	SetDisplacement(inst)
+if inst>1{//if it's a recource
+	
 	if hasThing=0 {//picking up recource
-		
+		SetDisplacement(inst)
 		inst.held=1	
 		hasThing=1
 		recource=inst
 	}else if inst.held=1{//dropping recource
-	hasThing=0
+	
 	with (inst){
 				
 	var plateID = instance_place(x,y,obj_plate)
 	var ovenID = instance_place(x,y,obj_oven)
-	if plateID!=noone&&plateID.finished=0{
-	
+	if plateID!=noone{//placing on burger
+	if ds_list_size(plateID.burgerParts)>0||(type=0||type=4||type=5||type=6||type=8){
 	ds_list_add(plateID.burgerParts,id)
+	obj_mainControl.hasThing=0
 	x=-50
 	y=-50
-	sprite_index=noone
-	}else if ovenID>0&&ovenID.timeleft=0{ //placing in oven
+	sprite_index=noone}
+	}else if ovenID>0{ //placing in oven
+		if ovenID.timeleft=0{
 	ovenID.timeleft=irandom_range(3,10)*60
 	ovenID.maxtimeleft=ovenID.timeleft
 	ovenID.inputType=type
 	instance_destroy(inst)
+	obj_mainControl.hasThing=0
+		}
 	}else if !place_meeting(x,y,obj_worktable){//placing on table
 		instance_destroy()	
-	}
-	held=0
+		obj_mainControl.hasThing=0
+	}else {held=0
+		obj_mainControl.hasThing=0}
+	
 		//	
 		}
 	}
@@ -109,12 +115,44 @@ recource=inst
 
 if mouse_check_button_pressed(mb_right){
 
+if hasThing=0{
 
-if hasThing=1&&ds_list_size(heldBurger)>0{
+inst = instance_place(x,y,obj_conveyor)
+
+if inst>1{
+inst.dir++;
+if inst.dir=4 then inst.dir=0
+
+switch(inst.dir){
+case 0:
+inst.hspd=inst.spd
+inst.vspd=0
+break;
+case 1:
+inst.hspd=0
+inst.vspd=inst.spd
+break;
+case 2:
+inst.hspd=-inst.spd
+inst.vspd=0
+break;
+case 3:
+inst.hspd=0
+inst.vspd=-inst.spd
+break;
+}
+
+}
+
+
+}else if hasThing=1{
+
+if ds_list_size(heldBurger)>0{
 
 //launch burger
-	
-	var projID =instance_create_depth(x,y,-1,obj_burgProjectile)
+	var spawnx=obj_player.x+cos((displaceAngle+image_angle)*pi/180)*displaceDist
+	var spawny=obj_player.y-sin((displaceAngle+image_angle)*pi/180)*displaceDist
+	var projID =instance_create_depth(spawnx,spawny,-1,obj_burgProjectile)
 	projID.speed=30
 	projID.direction = image_angle
 	projID.image_angle=image_angle-90
@@ -150,11 +188,16 @@ if hasThing=1&&ds_list_size(heldBurger)>0{
 			
 			
 			}
+			
+			while(ds_list_size(heldBurger!=0)){//fix memory leak refrences
+			instance_destroy(ds_list_find_value(heldBurger,0))
+			ds_list_delete(heldBurger,0)	
+			}
 	ds_list_clear(heldBurger)
 	hasThing=0
 	
 }
-
+}
 
 
 #region context menu (not used for now)

@@ -1,5 +1,5 @@
 
-
+//show_debug_message(string(ds_list_size(burgerParts)))
 
 drawx=startx
 drawy=starty
