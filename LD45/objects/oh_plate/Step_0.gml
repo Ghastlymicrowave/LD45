@@ -76,7 +76,9 @@ ds_list_add(transferList,ds_list_find_value(inputs,0))
 //form a burger
 
 if interacted=2{
+	if ds_list_size(inputs)>0{
 	refresh=maxRefresh
+	}
 	interacted=0
 }
 #endregion
