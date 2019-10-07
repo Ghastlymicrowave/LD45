@@ -52,7 +52,7 @@ ds_list_delete(transferList,0)
 }
 refresh=maxRefresh
 //take objects out
-if(ds_list_size(transferList)>0){
+if(ds_list_size(outputs)>0){
 ds_list_add(transferList,ds_list_find_value(outputs,0))
 ds_list_delete(outputs,0)
 }
