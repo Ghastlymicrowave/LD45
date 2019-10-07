@@ -5,7 +5,7 @@ var i=0
 //Remove Unaccepted Items
 repeat(ds_list_size(inputs)){
 	switch(ds_list_find_value(inputs,i)){
-	case "unaccepted item (object index)":
+	case "unaccepted item (object name)":
 	oh_drop(inputs,i)
 	break;
 	}
@@ -22,8 +22,8 @@ if(refresh>0){refresh--}else if(refresh=0){
 //Transfer items to different type
 repeat(ds_list_size(inputs)){
 switch(ds_list_find_value(inputs,i)){
-	case "craftable input (object index)":
-	ds_list_add(outputs,"crafting result (object index)")
+	case "craftable input (object name)":
+	ds_list_add(outputs,"crafting result (object object name)")
 	ds_list_delete(inputs,i)
 	break;
 	}
@@ -35,7 +35,7 @@ refresh--
 #endregion
 #region output management
 while(ds_list_size(outputs)>outCapacity){
-oh_drop(outputs,ds_list_size(outputs))
+oh_drop(outputs,ds_list_size(outputs)-1)
 }
 #endregion
 #region LMB Interact
