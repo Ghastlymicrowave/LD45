@@ -1,41 +1,35 @@
 /// @description Insert description here
 // You can write your code in this editor
-#region input management
-var i=0
-//Remove Unaccepted Items
-repeat(ds_list_size(inputs)){
-	switch(ds_list_find_value(inputs,i)){
-	case "unaccepted item (object name)":
-	oh_drop(inputs,i)
-	break;
-	}
-	i++
-}
-//Remove Too Many Items (Worst case scenario)
-while(ds_list_size(inputs)>inCapacity){
-	oh_drop(inputs,ds_list_size(inputs)-1)
-}
-#endregion
 #region processing
 //by default, timer is NOT reset, you have to do that in interact
 if(refresh>0){refresh--}else if(refresh=0){
 //Transfer items to different type
-repeat(ds_list_size(inputs)){
-switch(ds_list_find_value(inputs,i)){
-	case "craftable input (object name)":
-	ds_list_add(outputs,"crafting result (object object name)")
-	ds_list_delete(inputs,i)
+if(ds_list_size(outputs)<outCapacity){
+switch(irandom_range(1,4)){
+	case 1:
+	ds_list_add(outputs,"oh_res_bomb")
 	break;
-	}
+	case 2:
+	ds_list_add(outputs,"oh_resource_c_dirt")
+	break;
+	case 3:
+	ds_list_add(outputs,"oh_resource_c_dirt")
+	break;
+	case 4:
+	ds_list_add(outputs,"oh_resource_c_dirt")
+	break;
 }
-i++
+}
 //set refresh value to negative
-refresh--
+refresh=maxRefresh
 }else{}
 #endregion
 #region output management
 while(ds_list_size(outputs)>outCapacity){
 oh_drop(outputs,ds_list_size(outputs)-1)
+}
+if(ds_list_size(outputs)=outCapacity){
+refresh=maxRefresh
 }
 #endregion
 #region LMB Interact
@@ -43,12 +37,11 @@ oh_drop(outputs,ds_list_size(outputs)-1)
 if(interacted=1){
 	
 interacted=0
-//puts object in
-if(ds_list_size(transferList)>0){
-ds_list_add(inputs,ds_list_find_value(transferList,0))
-ds_list_delete(transferList,0)
+//take objects out
+if(ds_list_size(outputs)>0){
+ds_list_add(transferList,ds_list_find_value(outputs,0))
+ds_list_delete(outputs,0)
 }
-
 
 }
 #endregion
