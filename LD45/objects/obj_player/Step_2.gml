@@ -56,6 +56,11 @@ var currencyID=instance_place(x,y,obj_currency)
 obj_tablet.currency+=currencyID.currency
 instance_destroy(currencyID)
 }
+
+if place_meeting(x,y,obj_enemyProjectile){
+	var projID=instance_place(x,y,obj_enemyProjectile)	
+hp-=projID.damage
+}
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
 //x+=sin(dir*pi/180)*spd
