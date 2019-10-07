@@ -19,7 +19,7 @@ direction=dir
 speed=spd
 
 
-
+motion_add(knockbackDir,knockbackStr*cos(knockbackTime*pi)/StartknockbackTime*2)
 //if place_meeting(x+hspeed,y+vspeed,obj_collision){
 
 
@@ -55,6 +55,16 @@ if place_meeting(x,y,obj_currency){
 var currencyID=instance_place(x,y,obj_currency)
 obj_tablet.currency+=currencyID.currency
 instance_destroy(currencyID)
+}
+
+if place_meeting(x,y,prnt_enemy){
+var enemyID = instance_place(x,y,prnt_enemy)	
+hp-=enemyID.damage
+}
+
+if place_meeting(x,y,obj_enemyProjectile){
+var enemyID = instance_place(x,y,obj_enemyProjectile)	
+hp-=enemyID.damage
 }
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
