@@ -23,6 +23,16 @@ if(refresh>0){refresh--; if(refresh=0){
 ds_map_replace(burgIngredients,0,0)
 ds_map_replace(burgIngredients,1,0)
 ds_map_replace(burgIngredients,2,0)
+ds_map_replace(burgIngredients,3,0)
+ds_map_replace(burgIngredients,4,0)
+ds_map_replace(burgIngredients,5,0)
+ds_map_replace(burgIngredients,6,0)
+ds_map_replace(burgIngredients,7,0)
+ds_map_replace(burgIngredients,8,0)
+ds_map_replace(burgIngredients,9,0)
+ds_map_replace(burgIngredients,10,0)
+ds_map_replace(burgIngredients,11,0)
+ds_map_replace(burgIngredients,12,0)
 
 i=0
 burgDamage=0
@@ -32,7 +42,37 @@ switch(ds_list_find_value(inputs,i)){
 	applyBurgerDamage(5,1)
 	break;
 	case "oh_resource_c_dirt":
-	applyBurgerDamage(5,2)
+	applyBurgerDamage(6,2)
+	break;
+	case "oh_res_cactus":
+	applyBurgerDamage(8,3)
+	break;
+	case "oh_res_cactus_cooked":
+	applyBurgerDamage(10,4)
+	break;
+	case "oh_res_moss":
+	applyBurgerDamage(3,5)
+	break;
+	case "oh_res_moss_cooked":
+	applyBurgerDamage(13,6)
+	break;
+	case "oh_res_bomb":
+	applyBurgerDamage(40,7)
+	break;
+	case "oh_res_chemical_1":
+	applyBurgerDamage(5,8)
+	break;
+	case "oh_res_chemical_2":
+	applyBurgerDamage(17,9)
+	break;
+	case "oh_res_chemical_3":
+	applyBurgerDamage(19,10)
+	break;
+	case "oh_res_chemical_4":
+	applyBurgerDamage(38,11)
+	break;
+	case "oh_res_nuke":
+	applyBurgerDamage(46,12)
 	break;
 	}
 	show_debug_message(string(burgDamage))

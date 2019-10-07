@@ -18,7 +18,22 @@ if gatherTimer[i]!=0{
 	}
 }
 }
-
+#region input management
+var i=0
+//Remove Unaccepted Items
+repeat(ds_list_size(inputs)){
+	switch(ds_list_find_value(inputs,i)){
+	case "unaccepted item (object name)":
+	oh_drop(inputs,i)
+	break;
+	}
+	i++
+}
+//Remove Too Many Items (Worst case scenario)
+while(ds_list_size(inputs)>inCapacity){
+	oh_drop(inputs,ds_list_size(inputs)-1)
+}
+#endregion
 #region LMB
 if(mouse_check_button_pressed(mb_left)){
 var ohID = instance_place(x,y,oh_interactable)
@@ -60,6 +75,7 @@ if(mouse_check_button_pressed(mb_right)){
 	burgProjectile.direction = image_angle
 	burgProjectile.image_angle=image_angle-90
 	burgProjectile.damage= real(string_digits(string(ds_list_find_value(inputs,0)))) 
+	ds_list_clear(inputs)
 	}
 	
 	else{

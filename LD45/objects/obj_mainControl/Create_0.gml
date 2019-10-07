@@ -18,4 +18,4 @@ recource=0
 
 heldBurger= ds_list_create()
 inputs = ds_list_create()
-
+inCapacity=1

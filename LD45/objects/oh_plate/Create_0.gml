@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 inputs=ds_list_create()
-inCapacity=5
+inCapacity=40
 outputs=ds_list_create()
 outCapacity=0
 refresh=-1

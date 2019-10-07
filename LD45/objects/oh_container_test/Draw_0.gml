@@ -9,4 +9,4 @@ oh_listDisplay(inputs)
 draw_set_color(c_white)
 #endregion
 if refresh>0{
-draw_valueBar(x,y-48,15,64,refresh,maxRefresh,make_color_rgb(255,56,50),4)}
+draw_valueBar(x,y+48,15,64,refresh,maxRefresh,make_color_rgb(35,170,200),4)}

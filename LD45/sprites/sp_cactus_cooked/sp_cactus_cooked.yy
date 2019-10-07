@@ -6,9 +6,9 @@
     "For3D": false,
     "HTile": false,
     "VTile": false,
-    "bbox_bottom": 16,
+    "bbox_bottom": 33,
     "bbox_left": 0,
-    "bbox_right": 21,
+    "bbox_right": 43,
     "bbox_top": 0,
     "bboxmode": 0,
     "colkind": 1,
@@ -40,7 +40,7 @@
     ],
     "gridX": 0,
     "gridY": 0,
-    "height": 17,
+    "height": 34,
     "layers": [
         {
             "id": "476df8f1-8eca-4111-8517-4dc8d0ff59dc",
@@ -64,7 +64,7 @@
     "swfPrecision": 2.525,
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
-    "width": 22,
-    "xorig": 11,
-    "yorig": 8
+    "width": 44,
+    "xorig": 22,
+    "yorig": 17
 }
