@@ -61,6 +61,11 @@ if place_meeting(x,y,obj_enemyProjectile){
 	var projID=instance_place(x,y,obj_enemyProjectile)	
 hp-=projID.damage
 }
+
+if place_meeting(x,y,prnt_enemy){
+	var projID=instance_place(x,y,prnt_enemy)	
+hp-=projID.damage
+}
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
 //x+=sin(dir*pi/180)*spd
