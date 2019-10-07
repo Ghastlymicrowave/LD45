@@ -191,6 +191,22 @@
             }
         },
         {
+            "Key": "410d6feb-b21e-41ac-bbbb-5976e8c74232",
+            "Value": {
+                "id": "174b92ae-7b6e-4be3-9744-a805b08d4d65",
+                "resourcePath": "sprites\\sp_nothing\\sp_nothing.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "44b7d503-1721-4803-b370-cbd4693bca48",
+            "Value": {
+                "id": "9f1a79ee-bed7-4388-ba00-859a209a591a",
+                "resourcePath": "objects\\obj_enemyspawner\\obj_enemyspawner.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "48444f58-bcd2-4439-9269-8b4410cc6c52",
             "Value": {
                 "id": "2c51f5a0-ec7c-4a58-848f-0020a20df6d3",

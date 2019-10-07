@@ -19,20 +19,6 @@ if gatherTimer[i]!=0{
 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #region LMB
 
 if mouse_check_button_pressed(mb_left){
@@ -120,7 +106,7 @@ recource=inst
 }
 }
 
-inst = instance_place(x,y,prnt_machine)//if machine
+/*inst = instance_place(x,y,prnt_machine)//if machine
 if inst>1{
 	
 
@@ -148,13 +134,13 @@ if (hasThing=0){
 
 
 
-}
+}*/
 
 
 
 }
 
-
+}
 //end of lmb
 
 
