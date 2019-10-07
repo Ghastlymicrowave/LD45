@@ -151,6 +151,14 @@
             }
         },
         {
+            "Key": "2b47f1ea-b559-4303-9fb6-04fcf131ba6a",
+            "Value": {
+                "id": "e40a8808-8f6c-4cb8-87c1-fd2cfdce007e",
+                "resourcePath": "objects\\obj_enemyProjectile\\obj_enemyProjectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b881888-9746-4d5c-b331-5344acf02262",
             "Value": {
                 "id": "60bf7459-b131-44ec-b236-af375ad97886",
@@ -483,6 +491,14 @@
             "Value": {
                 "id": "1b3f453f-fd8e-4a98-b62a-ec730a196ab8",
                 "resourcePath": "objects\\oh_plate\\oh_plate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "857b34c8-e42a-46c2-841c-98c7ada1e790",
+            "Value": {
+                "id": "f461f403-2892-40de-80de-276257dac2ae",
+                "resourcePath": "objects\\obj_protoEnemyPathRanged\\obj_protoEnemyPathRanged.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -996,6 +1012,14 @@
                 "id": "933a9f27-32ce-4993-a296-429230c66b35",
                 "resourcePath": "sprites\\sp_buns\\sp_buns.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "fa014ef8-65df-43b3-84f0-c15c77a32fc9",
+            "Value": {
+                "id": "c958f5f1-6338-4702-9547-8e8dc25cc5d2",
+                "resourcePath": "objects\\obj_protoEnemyRealRanged\\obj_protoEnemyRealRanged.yy",
+                "resourceType": "GMObject"
             }
         },
         {
