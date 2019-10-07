@@ -5,8 +5,9 @@ var i=0
 //Remove Unaccepted Items
 repeat(ds_list_size(inputs)){
 	switch(ds_list_find_value(inputs,i)){
-	case "unaccepted item (object name)":
+	case "oh_burger":
 	oh_drop(inputs,i)
+	refresh=0
 	break;
 	}
 	i++
@@ -18,22 +19,24 @@ while(ds_list_size(inputs)>inCapacity){
 #endregion
 #region processing
 //by default, timer is NOT reset, you have to do that in interact
-if(refresh>0){refresh--}else if(refresh=0){
+if(refresh>0){refresh--; if(refresh=0){
 //Transfer items to different type
 i=0
 repeat(ds_list_size(inputs)){
 switch(ds_list_find_value(inputs,i)){
-	case "oh_resource":
-	ds_list_add(outputs,"oh_resource")
+	case "oh_resource_dirt":
+	ds_list_add(outputs,"oh_resource_c_dirt")
+	ds_list_delete(inputs,i)
+	break;
+	case "oh_resource_c_dirt":
+	ds_list_add(outputs,"oh_resource_c_dirt")
 	ds_list_delete(inputs,i)
 	break;
 	}
 i++
 }
-
-//set refresh value to negative
-refresh--
-}else{}
+}//just set it to 0
+}
 #endregion
 #region output management
 while(ds_list_size(outputs)>outCapacity){
@@ -49,8 +52,9 @@ interacted=0
 if(ds_list_size(transferList)>0){
 ds_list_add(inputs,ds_list_find_value(transferList,0))
 ds_list_delete(transferList,0)
-}
 refresh=maxRefresh
+}
+
 //take objects out
 if(ds_list_size(outputs)>0){
 ds_list_add(transferList,ds_list_find_value(outputs,0))
@@ -59,4 +63,7 @@ ds_list_delete(outputs,0)
 }
 #endregion
 #region RMB Interact
+if interacted=2{
+interacted=0	
+}
 #endregion

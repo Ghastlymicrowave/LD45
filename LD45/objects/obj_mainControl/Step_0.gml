@@ -22,14 +22,54 @@ if gatherTimer[i]!=0{
 #region LMB
 if(mouse_check_button_pressed(mb_left)){
 var ohID = instance_place(x,y,oh_interactable)
-if(instance_exists(ohID)){
+var interactableList = ds_list_create()
+instance_place_list(x,y,oh_interactable,interactableList,0)
+if ds_list_size(interactableList)>0{
+	show_debug_message("a")
+for(var ii = 0; ii < ds_list_size(interactableList);ii++){//prioritize resources
+	var ohID= ds_list_find_value(interactableList,ii)
+if(ohID.interactType=1){
 ohID.interacted = 1
 ohID.actor = object_index
 ohID.transferList = inputs
+ds_list_delete(interactableList,ii)
+show_debug_message("b")
+break;
+}
+}
+for(var ii = 0; ii < ds_list_size(interactableList);ii++){//other interactables now
+	show_debug_message("c")
+	var ohID= ds_list_find_value(interactableList,ii)
+if(ohID.interactType!=1){
+ohID.interacted = 1
+ohID.actor = object_index
+ohID.transferList = inputs
+break;
+}
+}
 }
 }
 #endregion
 #region RMB
+
+if(mouse_check_button_pressed(mb_right)){
+	
+	if string_count("oh_burger",string(ds_list_find_value(inputs,0)))=1 {
+	var burgProjectile = instance_create_depth(x,y,-5,obj_burgProjectile)
+	burgProjectile.speed=30
+	burgProjectile.direction = image_angle
+	burgProjectile.image_angle=image_angle-90
+	burgProjectile.damage= real(string_digits(string(ds_list_find_value(inputs,0)))) 
+	}
+	
+	else{
+	var ohID= instance_place(x,y,oh_interactable)
+	if ohID>1{
+	ohID.interacted=2	
+	}
+	}
+}
+
 
 #endregion
 #region Old Code
@@ -275,4 +315,4 @@ contextID.dir = (360)*pos/items
 #endregion
 */
 #endregion
-show_debug_message(string(hasThing)+string(ds_list_size(heldBurger)))
+//show_debug_message(string(hasThing)+string(ds_list_size(heldBurger)))
