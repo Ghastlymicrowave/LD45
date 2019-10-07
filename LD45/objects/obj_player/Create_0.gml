@@ -7,3 +7,4 @@ knockbackStr=0
 knockbackDir=0
 knockbackTime=0
 StartknockbackTime=0
+randomize()

@@ -55,11 +55,12 @@ if(menuOpen=1){
 		draw_text(window_get_width()/2+64,128+i*128-smoothScroll+32,"$"+string(upgrades[i,3]))
 		
 		#region	Mouse Down
-		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)&&mouse_check_button_released(mb_left)){
+		if(point_in_rectangle(window_mouse_get_x(),window_mouse_get_y(),boxx1,boxy1,boxx2,boxy2)&&mouse_check_button_released(mb_left)&&currency>=upgrades[i,3]){
 		instance_activate_all()
 		var xang=(playerX+lengthdir_x(90,playerAng))- (playerX+lengthdir_x(90,playerAng))mod(64)
 		var yang=(playerY+lengthdir_y(90,playerAng))- (playerY+lengthdir_y(90,playerAng))mod(64)
 		instance_create_depth(xang,yang,0,upgrades[i,4])
+		currency-=upgrades[i,3]
 		instance_deactivate_all(1)
 		}
 		#endregion
@@ -70,4 +71,5 @@ if(menuOpen=1){
 	//draw_sprite_ext(SSave,0,0,0,1,1,0,make_color_hsv(0,0,0),1)
 	
 }
+draw_text(15,15,"$"+string(currency))
 

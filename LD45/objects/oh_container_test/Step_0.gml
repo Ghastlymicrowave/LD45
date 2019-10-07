@@ -9,6 +9,26 @@ repeat(ds_list_size(inputs)){
 	oh_drop(inputs,i)
 	refresh=0
 	break;
+	case "oh_res_chemical_1":
+	oh_drop(inputs,i)
+	refresh=0
+	break;
+	case "oh_res_chemical_2":
+	oh_drop(inputs,i)
+	refresh=0
+	break;
+	case "oh_res_chemical_3":
+	oh_drop(inputs,i)
+	refresh=0
+	break;
+	case "oh_res_chemical_4":
+	oh_drop(inputs,i)
+	refresh=0
+	break;
+	case "oh_res_nuke":
+	oh_drop(inputs,i)
+	refresh=0
+	break;
 	}
 	i++
 }
