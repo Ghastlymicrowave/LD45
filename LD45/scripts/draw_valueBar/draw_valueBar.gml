@@ -23,8 +23,8 @@ smoothVal=argument4
 
 smoothVal+= (argument4-smoothVal)/argument7
 
-var spriteW= argument3/sprite_width
-var spriteH= argument2/sprite_width
+var spriteW= argument3/obj_mainControl.sprite_width
+var spriteH= argument2/obj_mainControl.sprite_width
 var invert= make_color_hsv((color_get_hue(argument6)+127.5)mod(255),color_get_saturation(argument6),color_get_value(argument6))
 draw_set_alpha(1)
 draw_set_color(c_white)

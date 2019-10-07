@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "6a801bae-3238-4212-8b2e-d81af51badab",
+            "Value": {
+                "id": "ce6d0491-ff80-491e-a1ce-496ed1b72269",
+                "resourcePath": "sprites\\sprite55\\sprite55.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6a8e6eee-7290-426e-9850-0180ca5a6bfb",
             "Value": {
                 "id": "298bf8fb-513c-4d47-bb74-8dda7524371d",
@@ -731,6 +739,14 @@
             "Value": {
                 "id": "f084af3d-f32d-4daf-a3d0-4aeb63205d41",
                 "resourcePath": "sprites\\sp_materials_cactusCooked\\sp_materials_cactusCooked.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9ddd125d-a9dd-49b0-aad5-4133e542812e",
+            "Value": {
+                "id": "bbfdd20c-d8b6-4ee5-993c-4aacea9bbfb6",
+                "resourcePath": "sprites\\sprite54\\sprite54.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1148,6 +1164,14 @@
                 "id": "50f741c4-991f-4d84-b357-14eb241b4acf",
                 "resourcePath": "views\\e3d5ef4a-baf8-43d0-ab5d-93e8f805ccdf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "e5222e57-e215-4453-b390-28e21cfdb8e1",
+            "Value": {
+                "id": "c6168491-277a-43fe-9692-e845d4624b05",
+                "resourcePath": "sprites\\sprite551\\sprite551.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

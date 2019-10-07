@@ -31,7 +31,7 @@ upgrades[2,0]="Cactus"
 upgrades[2,1]="Rule of 5"
 upgrades[2,2]=sp_cactus_source
 upgrades[2,3]=10
-upgrades[2,4]=oh_gen_dirt
+upgrades[2,4]=oh_gen_cactus
 //up 2
 upgrades[3,0]="Furnace"
 upgrades[3,1]="Cook Things"
@@ -43,19 +43,19 @@ upgrades[4,0]="Chemical Station"
 upgrades[4,1]="Chance of glory, chance of faliure"
 upgrades[4,2]=sprite49
 upgrades[4,3]=20
-upgrades[4,4]=oh_container_test
+upgrades[4,4]=oh_gen_chemical
 //up 2
 upgrades[5,0]="Bomb Station"
 upgrades[5,1]="Garunteed to work 25% of the time"
 upgrades[5,2]=sp_factory
 upgrades[5,3]=20
-upgrades[5,4]=oh_container_test
+upgrades[5,4]=oh_gen_bomb
 
 upgrades[6,0]="Nuclear Vat"
 upgrades[6,1]="Slow and Powerful"
 upgrades[6,2]=sp_chemicals_nuke
 upgrades[6,3]=30
-upgrades[6,4]=oh_container_test
+upgrades[6,4]=oh_gen_nuke
 #endregion
 ini_open("ham.burger")
 hover=false

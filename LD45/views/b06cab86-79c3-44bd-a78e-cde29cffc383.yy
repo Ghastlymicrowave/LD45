@@ -21,7 +21,8 @@
         "760f06bf-37d7-4a68-b5d3-d18d205cf2e4",
         "edb4a4eb-dde9-4618-b25a-b7228ebb0167",
         "2f808d7e-9fa2-45d0-a707-c28a2c4717d3",
-        "67edf134-c7f0-41f0-96e8-80013a0e193f"
+        "67edf134-c7f0-41f0-96e8-80013a0e193f",
+        "9ddd125d-a9dd-49b0-aad5-4133e542812e"
     ],
     "filterType": "GMSprite",
     "folderName": "All materials and stations",
