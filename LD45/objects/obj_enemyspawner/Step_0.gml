@@ -2,7 +2,7 @@
 // You can write your code in this editor
 
 if(t>0){t--}else{
-t=(60+random(60))*60
+t=(60+random(60))
 zone=irandom_range(1,4)
 switch(zone){
 case 1:
