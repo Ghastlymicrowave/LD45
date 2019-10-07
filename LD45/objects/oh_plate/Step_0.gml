@@ -7,7 +7,6 @@ repeat(ds_list_size(inputs)){
 	switch(ds_list_find_value(inputs,i)){
 	case "oh_burger":
 	oh_drop(inputs,i)
-	refresh=0
 	break;
 	}
 	i++
@@ -21,20 +20,28 @@ while(ds_list_size(inputs)>inCapacity){
 //by default, timer is NOT reset, you have to do that in interact
 if(refresh>0){refresh--; if(refresh=0){
 //Transfer items to different type
+ds_map_replace(burgIngredients,0,0)
+ds_map_replace(burgIngredients,1,0)
+ds_map_replace(burgIngredients,2,0)
+
 i=0
+burgDamage=0
 repeat(ds_list_size(inputs)){
 switch(ds_list_find_value(inputs,i)){
 	case "oh_resource_dirt":
-	ds_list_add(outputs,"oh_resource_c_dirt")
-	ds_list_delete(inputs,i)
+	applyBurgerDamage(5,1)
 	break;
 	case "oh_resource_c_dirt":
-	ds_list_add(outputs,"oh_resource_c_dirt")
-	ds_list_delete(inputs,i)
+	applyBurgerDamage(5,2)
 	break;
 	}
+	show_debug_message(string(burgDamage))
 i++
 }
+ds_list_clear(inputs)
+var burgID =instance_create_depth(x,y,-1,oh_burger)
+show_debug_message("burg created with damage:"+string(burgDamage))
+burgID.burgDamage=burgDamage
 }//just set it to 0
 }
 #endregion
@@ -52,18 +59,24 @@ interacted=0
 if(ds_list_size(transferList)>0){
 ds_list_add(inputs,ds_list_find_value(transferList,0))
 ds_list_delete(transferList,0)
-refresh=maxRefresh
+
 }
 
 //take objects out
-if(ds_list_size(transferList)>0){
-ds_list_add(transferList,ds_list_find_value(outputs,0))
-ds_list_delete(outputs,0)
+//for oh_plate, only when player's hand is *empty*, not sure how that'll be done, a bool maybe?
+//but this would go here\/
+/*if(ds_list_size(inputs)>0){
+ds_list_add(transferList,ds_list_find_value(inputs,0))
+}*/
+
 }
-}
+
 #endregion
 #region RMB Interact
+//form a burger
+
 if interacted=2{
-interacted=0	
+	refresh=maxRefresh
+	interacted=0
 }
 #endregion

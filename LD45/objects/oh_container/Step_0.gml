@@ -52,5 +52,8 @@ ds_list_delete(transferList,0)
 
 }
 #endregion
-#region RMP Interact
+#region RMB Interact
+if interacted=2{
+interacted=0	
+}
 #endregion
