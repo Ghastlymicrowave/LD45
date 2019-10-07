@@ -18,14 +18,14 @@ if spd>maxspd then spd=maxspd
 direction=dir
 speed=spd
 
-if knockbackTime>0{
-motion_add(knockbackDir,knockbackStr*cos(knockbackTime*pi)/StartknockbackTime*2)
-show_debug_message(string(knockbackStr*cos(knockbackTime*pi)/StartknockbackTime*2))
+if knockbackTime<StartknockbackTime{
+motion_add(knockbackDir,knockbackStr*cos(knockbackTime*pi/(StartknockbackTime*2)))
+show_debug_message(string(knockbackStr*cos(knockbackTime*pi/(StartknockbackTime*2))))
 
 show_debug_message(knockbackDir)
 show_debug_message(knockbackStr)
 show_debug_message(knockbackTime)
-knockbackTime--}
+knockbackTime++}
 //if place_meeting(x+hspeed,y+vspeed,obj_collision){
 
 
@@ -67,9 +67,9 @@ if place_meeting(x,y,prnt_enemy){
 var enemyID = instance_place(x,y,prnt_enemy)	
 hp-=enemyID.damage
 
-knockbackStr=min(enemyID.damage*2,80)
+knockbackStr=min(enemyID.damage,80)
 knockbackDir=point_direction(enemyID.x,enemyID.y,x,y)
-knockbackTime=min(enemyID.damage*2,40)
+knockbackTime=0
 StartknockbackTime=min(enemyID.damage*2,40)
 }
 
