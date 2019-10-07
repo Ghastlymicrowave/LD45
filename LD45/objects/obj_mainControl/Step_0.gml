@@ -20,6 +20,21 @@ if gatherTimer[i]!=0{
 }
 
 #region LMB
+if(mouse_check_button_pressed(mb_left)){
+var ohID = instance_place(x,y,oh_interactable)
+if(instance_exists(ohID)){
+ohID.interacted = 1
+ohID.actor = object_index
+ohID.transferList = inputs
+}
+}
+#endregion
+#region RMB
+
+#endregion
+#region Old Code
+/*
+#region LMB
 
 if mouse_check_button_pressed(mb_left){
 	#region Recource
@@ -134,7 +149,7 @@ if (hasThing=0){
 
 
 
-}*/
+}
 
 
 
@@ -142,7 +157,6 @@ if (hasThing=0){
 
 }
 //end of lmb
-
 
 
 
@@ -255,8 +269,10 @@ contextID = instance_create_depth(obj_mainControl.x,obj_mainControl.y,0,context_
 pos=1
 
 contextID.dir = (360)*pos/items
-}*/
+}
 }
 #endregion
+#endregion
+*/
 #endregion
 show_debug_message(string(hasThing)+string(ds_list_size(heldBurger)))

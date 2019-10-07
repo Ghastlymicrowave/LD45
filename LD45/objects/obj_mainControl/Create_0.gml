@@ -17,4 +17,5 @@ hasThing=0
 recource=0
 
 heldBurger= ds_list_create()
+inputs = ds_list_create()
 
