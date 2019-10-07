@@ -87,6 +87,14 @@
             }
         },
         {
+            "Key": "1000e5c8-412c-4a71-95bf-931e0abf02a8",
+            "Value": {
+                "id": "567ae3fe-05a4-4902-9ce1-ca252b7aeeb9",
+                "resourcePath": "objects\\oh_gen_nuke\\oh_gen_nuke.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1333c5db-705e-4429-b730-15ead7fa8eec",
             "Value": {
                 "id": "09359052-a1b0-459a-ace6-e0d709bb1116",
@@ -143,6 +151,14 @@
             }
         },
         {
+            "Key": "2895c91b-439c-4159-8708-ce1466c17e35",
+            "Value": {
+                "id": "e46f480e-b6eb-4a2a-9347-36a51bcd38c8",
+                "resourcePath": "objects\\oh_gen_bomb\\oh_gen_bomb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "28cf497d-cf94-4ee9-9748-3ac563625f27",
             "Value": {
                 "id": "c10bb21c-aea1-4213-bb9c-fcf50db4d4d7",
@@ -163,6 +179,14 @@
             "Value": {
                 "id": "60bf7459-b131-44ec-b236-af375ad97886",
                 "resourcePath": "objects\\context_mush\\context_mush.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2d339644-4910-4066-93f1-e2ee2d7a91bc",
+            "Value": {
+                "id": "32855f27-de76-4e3e-8005-42b2864c08b7",
+                "resourcePath": "objects\\oh_gen_dirt\\oh_gen_dirt.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -231,6 +255,14 @@
             }
         },
         {
+            "Key": "36702b55-541f-4d57-b59e-26952f8753e0",
+            "Value": {
+                "id": "64bd9dc1-1b95-4c54-b997-7db446dad763",
+                "resourcePath": "objects\\oh_res_chemical_1\\oh_res_chemical_1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "381f383c-d4d9-493b-9550-30bf168f8efe",
             "Value": {
                 "id": "90fc1621-7077-4efb-8fc0-262bb39a57db",
@@ -271,6 +303,14 @@
             }
         },
         {
+            "Key": "45c25969-cf38-49e2-ae43-080bc23ca3a3",
+            "Value": {
+                "id": "511ae850-b250-45ba-bdbe-6fa4a034840e",
+                "resourcePath": "objects\\oh_res_eldrich\\oh_res_eldrich.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "462de46b-5b0b-404c-a48b-78f1e8007efb",
             "Value": {
                 "id": "a928b7da-4301-42eb-a6ea-02047d4aaae8",
@@ -291,6 +331,14 @@
             "Value": {
                 "id": "9125866a-31ad-4a76-b374-15e1f6dac085",
                 "resourcePath": "objects\\obj_residentCollision\\obj_residentCollision.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "54436022-5864-47ef-aada-dd0fd87ca480",
+            "Value": {
+                "id": "fc5d8ef4-4f68-47b2-96a9-35d8419e3afc",
+                "resourcePath": "objects\\oh_res_chemical_3\\oh_res_chemical_3.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -351,6 +399,22 @@
             }
         },
         {
+            "Key": "5ede3bf3-b440-4221-b8ac-4ffdfae42199",
+            "Value": {
+                "id": "e3964f3e-fffd-46b4-9de8-d70a7597a2a5",
+                "resourcePath": "views\\5ede3bf3-b440-4221-b8ac-4ffdfae42199.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "5ff9b3ee-4213-4bbe-b233-4e0012082c41",
+            "Value": {
+                "id": "7ea209be-e991-4b3b-83c8-028829488309",
+                "resourcePath": "views\\5ff9b3ee-4213-4bbe-b233-4e0012082c41.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "612b06cf-c4cd-4f88-a42a-09964fc1c08a",
             "Value": {
                 "id": "b7979988-e374-465c-8c9d-0b1c5ca5749f",
@@ -380,6 +444,14 @@
                 "id": "66a19d40-f882-49d3-8ec1-8ec477279573",
                 "resourcePath": "sprites\\sp_chemicals_nuke\\sp_chemicals_nuke.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6898fd19-cd4a-410b-b686-03041ab8a90f",
+            "Value": {
+                "id": "e42f889d-4582-4f0d-83a9-08ecf86a0532",
+                "resourcePath": "objects\\oh_res_chemical_4\\oh_res_chemical_4.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -551,10 +623,34 @@
             }
         },
         {
+            "Key": "94e86074-2702-4687-8e83-ce59bebfeb46",
+            "Value": {
+                "id": "4b842657-9faf-4ca9-8758-111eaf2bb915",
+                "resourcePath": "objects\\oh_res_cactus\\oh_res_cactus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "98d22cd2-dfb6-4cc6-a437-c24d3f6797a7",
             "Value": {
                 "id": "244a5f36-4c40-41ab-9806-92d7263de406",
                 "resourcePath": "objects\\obj_oven\\obj_oven.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "99bdbc6b-7764-4487-94e5-036ad52970d2",
+            "Value": {
+                "id": "7cdc7cc4-2e65-4bcb-afa2-1ab18e9789ad",
+                "resourcePath": "objects\\oh_res_cactus_cooked\\oh_res_cactus_cooked.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "99bfa461-54b8-42ac-95b8-d0caeb55f738",
+            "Value": {
+                "id": "965cd7a1-7368-4211-aff8-803826e8023c",
+                "resourcePath": "objects\\oh_res_moss\\oh_res_moss.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -591,11 +687,27 @@
             }
         },
         {
+            "Key": "a259dbf9-c8c4-4bb3-aa78-30bfc3c0904b",
+            "Value": {
+                "id": "d098075f-cd69-446d-b36d-1b12a4b341aa",
+                "resourcePath": "objects\\oh_gen_chemical\\oh_gen_chemical.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a4ee733b-8a63-4558-a259-2952503fb487",
             "Value": {
                 "id": "05e43b45-447d-47cb-aa6c-3102e36b0e77",
                 "resourcePath": "scripts\\oh_listDisplay\\oh_listDisplay.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a55b4b6a-8497-4b74-ab5c-c1057e4b03f8",
+            "Value": {
+                "id": "32eb5ee7-e3e0-4418-a9c2-5bc2c4bcc0f1",
+                "resourcePath": "objects\\oh_res_moss_cooked\\oh_res_moss_cooked.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -639,6 +751,14 @@
             }
         },
         {
+            "Key": "acff4508-cc2c-43d6-95da-f7ad40f6103b",
+            "Value": {
+                "id": "f6ea6abc-d1cb-4820-8d7b-dd5a0f62fec7",
+                "resourcePath": "objects\\oh_gen_cactus\\oh_gen_cactus.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "adf95298-5df8-41af-88d1-07d35098cbbe",
             "Value": {
                 "id": "e2bd4a27-06f2-45de-9b18-e9eb104a2f57",
@@ -652,6 +772,22 @@
                 "id": "1c92a558-2457-42d3-8a14-cd42eb1b2b98",
                 "resourcePath": "views\\b06cab86-79c3-44bd-a78e-cde29cffc383.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b1e939e9-bdfa-46fc-a13a-e707f5b033dd",
+            "Value": {
+                "id": "6e4fbbe6-73a4-43df-8546-5e53ea8a6545",
+                "resourcePath": "objects\\oh_res_etherial\\oh_res_etherial.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6f6285b-1b02-4724-8c42-55c250da61d6",
+            "Value": {
+                "id": "2277c9ee-a97f-4482-8e24-f7b492083615",
+                "resourcePath": "objects\\oh_res_nuke\\oh_res_nuke.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -799,6 +935,14 @@
             }
         },
         {
+            "Key": "cc737fa1-57aa-4cf1-a71a-3b6ae956a653",
+            "Value": {
+                "id": "620233e8-fe3b-40a8-ae02-df1720cf4e03",
+                "resourcePath": "objects\\oh_res_bomb\\oh_res_bomb.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cc98d028-7bdd-4680-85f3-c87a7baa481e",
             "Value": {
                 "id": "b241fbae-025d-4689-a6d3-0279740d716d",
@@ -819,6 +963,14 @@
             "Value": {
                 "id": "ff712253-177f-4f61-af2d-e1e31fb91934",
                 "resourcePath": "objects\\oh_interactable\\oh_interactable.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "d1357361-c4ce-4bae-b0fd-4d483e0c03b2",
+            "Value": {
+                "id": "01e6817e-5ee1-43ec-967c-5aa4a4b6db64",
+                "resourcePath": "objects\\oh_gen_moss\\oh_gen_moss.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -875,6 +1027,14 @@
             "Value": {
                 "id": "f9d13e28-755d-41bd-8138-377639e26b25",
                 "resourcePath": "objects\\obj_plate\\obj_plate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "dc4d3353-4bbd-4430-a60e-c96d651a89ad",
+            "Value": {
+                "id": "048d467c-4efa-4e94-bef4-7b16e6c89420",
+                "resourcePath": "objects\\oh_res_chemical_2\\oh_res_chemical_2.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -964,6 +1124,14 @@
                 "id": "7a37a751-a5c1-4152-9e9d-9d9130129886",
                 "resourcePath": "sprites\\sp_shoptemplate\\sp_shoptemplate.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ed5bd26c-71a4-47ba-87c4-69360feb00e9",
+            "Value": {
+                "id": "f8a77bf7-684a-4170-88e6-9f2dab71b4c1",
+                "resourcePath": "views\\ed5bd26c-71a4-47ba-87c4-69360feb00e9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
