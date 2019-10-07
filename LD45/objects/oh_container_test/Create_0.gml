@@ -3,7 +3,7 @@
 inputs=ds_list_create()
 inCapacity=1
 outputs=ds_list_create()
-outCapacity=0
+outCapacity=1
 refresh=-1
 maxRefresh=60
 interacted=0
