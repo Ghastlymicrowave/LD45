@@ -80,3 +80,7 @@ hp-=enemyID.damage
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
 //x+=sin(dir*pi/180)*spd
+if(!point_in_rectangle(x+hspeed,y,0,0,room_width,room_height)){hspeed=0}
+if(!point_in_rectangle(x,y+vspeed,0,0,room_width,room_height)){vspeed=0}
+
+if(hp<=0){room_restart()}

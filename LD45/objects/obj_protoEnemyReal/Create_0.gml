@@ -1,2 +1,2 @@
 hp=50
-damage=10
+damage=1
