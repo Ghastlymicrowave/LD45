@@ -8,3 +8,5 @@ knockbackDir=0
 knockbackTime=0
 StartknockbackTime=0
 randomize()
+lastinputs=0
+iframes=0

@@ -3,3 +3,4 @@
 t=60
 e=1
 zone=0
+randomize()

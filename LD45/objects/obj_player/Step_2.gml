@@ -63,7 +63,7 @@ obj_tablet.currency+=currencyID.currency
 instance_destroy(currencyID)
 }
 
-if place_meeting(x,y,prnt_enemy){
+if place_meeting(x,y,prnt_enemy)&&iframes=0{
 var enemyID = instance_place(x,y,prnt_enemy)	
 hp-=enemyID.damage
 
@@ -71,16 +71,19 @@ knockbackStr=min(enemyID.damage,80)
 knockbackDir=point_direction(enemyID.x,enemyID.y,x,y)
 knockbackTime=0
 StartknockbackTime=min(enemyID.damage*2,40)
+iframes=20
 }
 
-if place_meeting(x,y,obj_enemyProjectile){
+if place_meeting(x,y,obj_enemyProjectile)&&iframes=0{
 var enemyID = instance_place(x,y,obj_enemyProjectile)	
 hp-=enemyID.damage
+iframes=20
+instance_destroy(obj_enemyProjectile)
 }
 //show_debug_message(string(dir))
 //x+=cos(dir*pi/180)*spd
 //x+=sin(dir*pi/180)*spd
 if(!point_in_rectangle(x+hspeed,y,0,0,room_width,room_height)){hspeed=0}
 if(!point_in_rectangle(x,y+vspeed,0,0,room_width,room_height)){vspeed=0}
-
+if iframes>0 then iframes--
 if(hp<=0){room_restart()}
