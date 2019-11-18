@@ -76,6 +76,15 @@ if(mouse_check_button_pressed(mb_right)){
 	burgProjectile.image_angle=image_angle-90
 	burgProjectile.damage= real(string_digits(string(ds_list_find_value(inputs,0)))) 
 	ds_list_clear(inputs)
+	if string_count("typea",string(ds_list_find_value(inputs,0)))=1{
+	burgProjectile.type=1
+	}else if string_count("typeb",string(ds_list_find_value(inputs,0)))=1{
+	burgProjectile.type=2
+	}else if string_count("typec",string(ds_list_find_value(inputs,0)))=1{
+	burgProjectile.type=3
+	}else{
+	burgProjectile.type=0	
+	}
 	}
 	
 	else{
